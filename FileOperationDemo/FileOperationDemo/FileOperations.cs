@@ -74,6 +74,17 @@ namespace FileOperationDemo
             }
             Console.WriteLine("----------------------------------------------------");
         }
+        public void WriteFrom_StreamWriter()
+        {
+            using (StreamWriter sw = File.AppendText(path))
+            {
+                sw.WriteLine("Hey Hi...................");
+                sw.Close();
+                Console.WriteLine(File.ReadAllText(path));
+
+            }
+            Console.WriteLine("-------------------------------------------------------");
+        }
 
 
     }

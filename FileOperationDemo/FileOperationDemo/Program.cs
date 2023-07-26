@@ -20,6 +20,7 @@ namespace FileOperationDemo
                 Console.WriteLine("4:Copy file");
                 Console.WriteLine("5:Delete file");
                 Console.WriteLine("6:Read from Stream Reader");
+                Console.WriteLine("7:Write from stream writer");
                 Console.WriteLine("Choose the option");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -44,6 +45,9 @@ namespace FileOperationDemo
                         break;
                         case 6:
                         fileOperations.ReadFrom_StreamReader();
+                        break;
+                        case 7:
+                        fileOperations.WriteFrom_StreamWriter();
                         break;
 
                         }
