@@ -46,6 +46,13 @@ namespace FileOperationDemo
             }
             Console.WriteLine("-----------------------------------------------");
         }
+        public void Copy_File()
+        {
+            string copyPath = @"C:\RFP288Batch\FileIOOperations\FileIO_Operations\FileOperationDemo\FileOperationDemo\Files\Abc.txt";
+            File.Copy(path,copyPath);
+            Console.WriteLine("File is copied");
+            Console.WriteLine("-------------------------------------------------");
+        }
 
 
     }
