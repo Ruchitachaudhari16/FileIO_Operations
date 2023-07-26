@@ -53,6 +53,14 @@ namespace FileOperationDemo
             Console.WriteLine("File is copied");
             Console.WriteLine("-------------------------------------------------");
         }
+        public void Delete_File()
+        {
+            string copyPath = @"C:\RFP288Batch\FileIOOperations\FileIO_Operations\FileOperationDemo\FileOperationDemo\Files\Abc.txt";
+            File.Delete(copyPath);
+            Console.WriteLine("File is Deleted");
+            Console.WriteLine("--------------------------------------------------");
+
+        }
 
 
     }
