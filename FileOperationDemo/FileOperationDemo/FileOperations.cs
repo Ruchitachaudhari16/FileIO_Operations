@@ -61,6 +61,19 @@ namespace FileOperationDemo
             Console.WriteLine("--------------------------------------------------");
 
         }
+        public void ReadFrom_StreamReader()
+        {
+            //stream Reader class is used to read string from a stream in a specified ending
+            using (StreamReader sr = File.OpenText(path))
+            {
+                string str = "";
+                while ((str = sr.ReadLine()) != null)
+                {
+                    Console.WriteLine(str);
+                }
+            }
+            Console.WriteLine("----------------------------------------------------");
+        }
 
 
     }
