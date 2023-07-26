@@ -15,12 +15,17 @@ namespace FileOperationDemo
             while (true)
             {
                 Console.WriteLine("1:File Exist or not");
+                Console.WriteLine("2:Read All Lines from file");
                 Console.WriteLine("Choose the option");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
                     case 1:
                         fileOperations.File_Exist();
+                        break;
+
+                        case 2:
+                        fileOperations.ReadAll_Lines();
                         break;
 
                 }
