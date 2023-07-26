@@ -38,7 +38,14 @@ namespace FileOperationDemo
 
             Console.WriteLine("----------------------------------------------");
         }
-
+        public void ReadAll_Text()
+        {//ReadAllText- used to open text file then it will read all the lines at a time with out help of array.
+            string lines = File.ReadAllText(path);
+            {
+                Console.WriteLine(lines);
+            }
+            Console.WriteLine("-----------------------------------------------");
+        }
 
 
     }
